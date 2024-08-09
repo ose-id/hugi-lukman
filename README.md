@@ -4,7 +4,7 @@ Todo list:
 
 - Page
   - [x] Home
-  - [ ] Profile
+  - [x] Profile
   - [x] Login
 - Responsive
   - [ ] Home
