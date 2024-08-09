@@ -7,6 +7,6 @@ Todo list:
   - [ ] Profile
   - [ ] Login
 - Responsive
-  - [] Home
+  - [ ] Home
   - [ ] Profile
   - [ ] Login
