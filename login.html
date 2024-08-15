@@ -8,10 +8,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/css/style.css" />
+
+    
   </head>
   <body>
     <!-- Header -->
-    <header class="flex justify-between items-center p-8 border-b border-gray-400">
+    <!-- <header class="flex justify-between items-center p-8 border-b border-gray-400">
       <ul class="flex items-center gap-8">
         <img src="./src/assets/logo.svg" alt="" />
         <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
@@ -25,20 +27,67 @@
         <a href="" class="text-blue-400 hover:text-blue-500">Masuk</a>
         <a href="" class="bg-green-400 p-4 rounded-md text-white hover:bg-green-500">Bergabung</a>
       </div>
+    </header> -->
+
+    <!-- Header -->
+    <header class="flex flex-wrap items-center justify-between p-8 border-b border-gray-400">
+      <!-- Logo and Hamburger Menu -->
+      <div class="flex items-center justify-between w-full lg:w-auto">
+          <img src="./src/assets/logo.svg" alt=" " />
+          <button id="menu-btn" class="lg:hidden focus:outline-none">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+          </button>
+      </div>
+
+      <!-- Menu Links -->
+      <ul id="menu" class="hidden flex-col items-start lg:flex lg:flex-row lg:items-center lg:gap-8 w-full lg:w-auto lg:mt-0 2xl:mr-[36%]">
+          <li><a href="index.html" class="block p-4 lg:p-0 hover:text-blue-500">Home</a></li>
+          <li><a href="profile.html" class="block p-4 lg:p-0 hover:text-blue-500">Profil</a></li>
+          <li><a href="#" class="block p-4 lg:p-0 hover:text-blue-500">Cabang HUGI</a></li>
+          <li><a href="#" class="block p-4 lg:p-0 hover:text-blue-500">Events</a></li>
+          <li><a href="#" class="block p-4 lg:p-0 hover:text-blue-500">Membership</a></li>
+          <li><a href="#" class="block p-4 lg:p-0 hover:text-blue-500">Publikasi</a></li>
+      </ul>
+
+      <!-- Login and Join Buttons -->
+      <div id="nav-action" class="hidden lg:block space-x-4 mt-4 lg:mt-0">
+          <a href="#" class="text-blue-400 hover:text-blue-500">Masuk</a>
+          <a href="#" class="bg-green-400 p-4 rounded-md text-white hover:bg-green-500">Bergabung</a>
+      </div>
     </header>
 
     <!-- Form -->
-    <section class="grid grid-cols-2 items-center h-[70vh] pr-40 sm:grid-cols-1 sm:ml-40 md:grid-cols-2 md:ml-0">
-      <div class="md:mb-40">
-        <img src="./src/assets/logo.svg" alt="HUGI Logo" class="w-[70%] sm:w-[85%] md:w-[85%]" />
+    <!-- <section class="grid grid-cols-1 items-center h-[70vh] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:items-center lg:h-[70vh] lg:pr-40">
+      <div class="flex justify-center items-center md:mb-40">
+        <img src="./src/assets/logo.svg" alt="HUGI Logo" class="w-[55%] sm:w-[65%] md:w-[70%] lg:w-[70%]" />
       </div>
       <div class="flex justify-center items-center">
-        <form class="space-y-8 w-[400px] flex flex-col items-center">
+        <form class="space-y-8 w-[400px] flex flex-col items-center w-[65%] sm:w-[70%] md:w-[80%]">
           <input class="w-full border-2 border-[#45A9DD] bg-transparent h-12 rounded-lg px-4 placeholder:text-[#8AB8C9] placeholder:text-center" type="text" placeholder="Username" />
           <input class="w-full border-2 border-[#45A9DD] bg-transparent h-12 rounded-lg px-4 placeholder:text-[#8AB8C9] placeholder:text-center" type="password" placeholder="Password" />
           <button class="w-[25%] h-12 bg-[#00BCED] text-white rounded-lg hover:bg-blue-600">Sign In</button>
           <span class="block text-center text-[#8AB8C9] mt-4">Forget your password? <a href="" class="text-[#00BCED] mt-4 hover:underline">Click Here</a></span>
         </form>
+      </div>
+    </section> -->
+
+    <!-- Form -->
+    <section class="flex flex-col md:flex-row items-center h-auto md:h-[70vh] p-6 md:pr-40">
+      <!-- Logo -->
+      <div class="flex justify-center items-center mt-8 md:mt-0 md:mb-40 w-full md:w-1/2">
+          <img src="./src/assets/logo.svg" alt="HUGI Logo" class="w-[60%] sm:w-[50%] md:w-[70%] lg:w-[70%]" />
+      </div>
+
+      <!-- Form -->
+      <div class="flex justify-center items-center w-full md:w-1/2">
+          <form class="space-y-6 w-full max-w-sm flex flex-col items-center">
+              <input class="w-full border-2 border-[#45A9DD] bg-transparent h-12 rounded-lg px-4 placeholder:text-[#8AB8C9] placeholder:text-center focus:outline-none focus:ring-2 focus:ring-[#00BCED]" type="text" placeholder="Username" />
+              <input class="w-full border-2 border-[#45A9DD] bg-transparent h-12 rounded-lg px-4 placeholder:text-[#8AB8C9] placeholder:text-center focus:outline-none focus:ring-2 focus:ring-[#00BCED]" type="password" placeholder="Password" />
+              <button class="w-[25%] h-12 bg-[#00BCED] text-white rounded-lg hover:bg-blue-600">Sign In</button>
+              <span class="block text-center text-[#8AB8C9] mt-4">Forget your password? <a href="" class="text-[#00BCED] hover:underline">Click Here</a></span>
+          </form>
       </div>
     </section>
 
@@ -118,5 +167,9 @@
         </ul>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+  <script src="./src/js/scripts.js"></script>
+
   </body>
 </html>
